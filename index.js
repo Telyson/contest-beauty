@@ -18,7 +18,7 @@ function grabInput(e){
 }
 
 async function sendData() {
-    const res = await fetch('http://localhost:3009/login', {
+    const res = await fetch('https://contest-beauty.herokuapp.com/login', {
         method:"POST",
         body:JSON.stringify(toBack),
         headers:{"Content-type":"application/json"}
